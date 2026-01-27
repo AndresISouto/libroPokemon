@@ -1,0 +1,12 @@
+import { Outlet } from "react-router";
+
+export const RootLayout = () => {
+  return (
+    <>
+      <NavBar />
+      <main className="w-screen h-screen">
+        <Outlet></Outlet>
+      </main>
+    </>
+  );
+};
