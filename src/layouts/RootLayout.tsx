@@ -1,3 +1,4 @@
+import { NavBar } from "@/components/shared/NavBar";
 import { Outlet } from "react-router";
 
 export const RootLayout = () => {
