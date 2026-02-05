@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import { RootLayout } from "../layouts/RootLayout";
 import { Homepage } from "../pages/Homepage";
 import { GlosaryPage } from "@/pages/GlosaryPage";
+import { PokemonPage } from "@/pages/PokemonPage";
 
 export const router = createBrowserRouter([
   {
@@ -13,8 +14,8 @@ export const router = createBrowserRouter([
         element: <Homepage></Homepage>,
       },
       {
-        path: "/glosario/pokemons",
-        element: <GlosaryPage></GlosaryPage>,
+        path: "/pokemons",
+        element: <PokemonPage></PokemonPage>,
       },
       {
         path: "/glosario/personajes",
