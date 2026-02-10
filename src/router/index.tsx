@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router";
 import { RootLayout } from "../layouts/RootLayout";
 import { Homepage } from "../pages/Homepage";
-import { GlosaryPage } from "@/pages/GlosaryPage";
 import { PokemonPage } from "@/pages/PokemonPage";
+import { CharacterPage } from "@/pages/CharacterPage";
+import { LorePage } from "@/pages/LorePage";
+import { MapPage } from "@/pages/MapPage";
 
 export const router = createBrowserRouter([
   {
@@ -18,16 +20,16 @@ export const router = createBrowserRouter([
         element: <PokemonPage></PokemonPage>,
       },
       {
-        path: "/glosario/personajes",
-        element: <GlosaryPage></GlosaryPage>,
+        path: "/personajes",
+        element: <CharacterPage></CharacterPage>,
       },
       {
-        path: "/glosario/mapas",
-        element: <GlosaryPage></GlosaryPage>,
+        path: "/mapas",
+        element: <MapPage></MapPage>,
       },
       {
-        path: "/glosario/lore",
-        element: <GlosaryPage></GlosaryPage>,
+        path: "/lore",
+        element: <LorePage></LorePage>,
       },
     ],
   },
