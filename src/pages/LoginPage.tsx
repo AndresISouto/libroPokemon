@@ -10,7 +10,7 @@ export const LoginPage = () => {
       </form>
       <p>
         ¿No tienes cuenta? Crea una{" "}
-        <Link key={"llave"} to={"/signIn"} className="text-blue-400">
+        <Link key={"llave"} to={"/signIn"} className="text-blue-600">
           Aquí
         </Link>
       </p>
