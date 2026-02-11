@@ -5,6 +5,7 @@ import { PokemonPage } from "@/pages/PokemonPage";
 import { CharacterPage } from "@/pages/CharacterPage";
 import { LorePage } from "@/pages/LorePage";
 import { MapPage } from "@/pages/MapPage";
+import { LibrosPage } from "@/pages/LibrosPage/LibrosPage";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: "/lore",
         element: <LorePage></LorePage>,
+      },
+      {
+        path: "/libros",
+        element: <LibrosPage></LibrosPage>,
       },
     ],
   },

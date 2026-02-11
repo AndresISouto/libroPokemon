@@ -5,30 +5,28 @@ import { Link } from "react-router";
 
 export const Footer = () => {
   return (
-    <footer className="grid grid-cols-4 bg-nav text-white mb-0 font-custom">
-      <article className="col-start-2 p-4 m-4 flex flex-col items-center">
-        <h4 className="font-semibold text-xl p-2 m-2">Links</h4>
-        <ul className="flex flex-col items-center">
-          {navLinks.map((link) => (
-            <li className="p-2">
-              <Link key={link.id} to={link.href}>
-                {link.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </article>
-      <article className="col-start-3 p-4 m-4 flex flex-col items-center">
-        <h4 className="font-semibold text-xl p-2 m-2">Contacto</h4>
-        <ul className="flex flex-col items-center gap-2">
-          <li className="flex items-center gap-2">
-            <FaPhoneAlt /> 123 456 789
-          </li>
-          <li className="flex items-center gap-2">
-            <IoIosMail /> noreply@notenemoscorreo.com
-          </li>
-        </ul>
-      </article>
+    <footer className="bg-nav text-white font-custom grid grid-cols-1 md:flex items-center justify-around p-4 ">
+      <nav className="space-x-4">
+        <Link key={navLinks[0].id} to={navLinks[0].href}>
+          {navLinks[0].title}
+        </Link>
+        <Link key={navLinks[1].id} to={navLinks[1].href}>
+          {navLinks[1].title}
+        </Link>
+        <Link key={navLinks[2].id} to={navLinks[2].href}>
+          {navLinks[2].title}
+        </Link>
+      </nav>
+      <nav className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
+          <FaPhoneAlt></FaPhoneAlt>
+          <p>+34 123456789</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <IoIosMail></IoIosMail>
+          <p>micorreo@noreply.com</p>
+        </div>
+      </nav>
     </footer>
   );
 };

@@ -7,10 +7,10 @@ interface Props {
 export const RightImgSection = ({ img, title, body }: Props) => {
   return (
     <>
-      <section className="grid grid-cols-3  p-8 m-8  rounded-3xl shadow-xl relative max-h- ">
+      <section className="grid grid-cols-1 md:grid-cols-3 text-balance p-4 m-4 md:p-8 md:m-8  rounded-3xl shadow-xl relative max-h- ">
         <div className="absolute bg-blur opacity-10 inset-0 bg-cover bg-center"></div>
         <article className="col-span-2 m-4 p-4 font-custom flex items-center flex-col justify-center ">
-          <h3 className="text-5xl p-4">{title}</h3>
+          <h3 className=" text-3xl md:text-5xl p-4 font-semibold">{title}</h3>
           <p className="leading-relaxed">{body}</p>
         </article>
         <img
