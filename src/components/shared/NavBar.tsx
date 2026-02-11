@@ -2,6 +2,7 @@ import { NavLink } from "react-router";
 import { navLinks } from "../../consts/links";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
+import { Link } from "react-router";
 
 export const NavBar = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -9,7 +10,7 @@ export const NavBar = () => {
   return (
     <nav className="h-26 bg-nav w-full max-w-screen relative">
       <div className="flex items-center justify-around">
-        <div className="flex items-center">
+        <Link to={"/"} key={"logo"} className="flex items-center">
           <img
             src="/logo.png"
             alt="logo"
@@ -20,7 +21,7 @@ export const NavBar = () => {
             alt="Mi gran aventura pokemon Tirulina"
             className="h-20 max-w-36"
           />
-        </div>
+        </Link>
         <div className="mx-20 hidden md:flex items-center justify-around">
           {navLinks.map((link) => (
             <NavLink

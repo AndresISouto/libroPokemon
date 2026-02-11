@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export const Banner = () => {
   return (
     <section
@@ -16,17 +18,19 @@ export const Banner = () => {
         <h3 className=" font-custom font-semibold text-2xl p-2">
           Donde sabes donde empiezas pero no donde vas a acabar...
         </h3>
-        <button
-          className="group relative inline-flex h-12 items-center 
-justify-center overflow-hidden rounded-md 
-border border-neutral-200 bg-white px-6 
-font-medium text-black transition-all 
-duration-100 [box-shadow:5px_5px_rgb(82_82_82)] 
-active:translate-x-1 active:translate-y-1 
-active:[box-shadow:0px_0px_rgb(82_82_82)]"
-        >
-          Descargar el primer libro
-        </button>
+        <Link key={"log"} to={"/login"}>
+          <button
+            className="group relative inline-flex h-12 items-center 
+            justify-center overflow-hidden rounded-md 
+            border border-neutral-200 bg-white px-6 
+            font-medium text-black transition-all 
+            duration-100 [box-shadow:5px_5px_rgb(82_82_82)] 
+            active:translate-x-1 active:translate-y-1 
+            active:[box-shadow:0px_0px_rgb(82_82_82)]"
+          >
+            Descargar el primer libro
+          </button>
+        </Link>
       </div>
     </section>
   );
