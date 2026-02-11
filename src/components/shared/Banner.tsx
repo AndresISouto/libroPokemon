@@ -12,10 +12,10 @@ export const Banner = () => {
       ></div>
       <div className="absolute inset-0 bg-cover bg-center opacity-30 bg-black"></div>
       <div className="absolute flex items-center h-full flex-col justify-center ml-2 md:ml-4 text-white">
-        <h2 className=" font-custom font-bold text-4xl p-2 ">
+        <h2 className=" font-custom font-bold text-4xl p-2 text-shadow-black ">
           Bienvenidos a esta gran aventura pokemon!
         </h2>
-        <h3 className=" font-custom font-semibold text-2xl p-2">
+        <h3 className=" font-custom font-semibold text-2xl p-2 text-shadow-black">
           Donde sabes donde empiezas pero no donde vas a acabar...
         </h3>
         <Link key={"log"} to={"/login"}>
