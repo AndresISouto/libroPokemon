@@ -7,14 +7,18 @@ export const NavBar = () => {
   const [isToggled, setIsToggled] = useState(false);
 
   return (
-    <nav className="h-26 bg-nav w-screen relative">
-      <div className="flex items-center justify-between">
+    <nav className="h-26 bg-nav w-full max-w-screen relative">
+      <div className="flex items-center justify-around">
         <div className="flex items-center">
-          <img src="/logo.png" alt="logo" className="h-24 w-24 relative " />
+          <img
+            src="/logo.png"
+            alt="logo"
+            className="h-24 w-24 max-w-24 relative "
+          />
           <img
             src="/title.png"
             alt="Mi gran aventura pokemon Tirulina"
-            className="h-20"
+            className="h-20 max-w-36"
           />
         </div>
         <div className="mx-20 hidden md:flex items-center justify-around">

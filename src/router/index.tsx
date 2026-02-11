@@ -6,6 +6,7 @@ import { CharacterPage } from "@/pages/CharacterPage";
 import { LorePage } from "@/pages/LorePage";
 import { MapPage } from "@/pages/MapPage";
 import { LibrosPage } from "@/pages/LibrosPage/LibrosPage";
+import { LoginPage } from "@/pages/LoginPage";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path: "/libros",
         element: <LibrosPage></LibrosPage>,
+      },
+      {
+        path: "/login",
+        element: <LoginPage></LoginPage>,
       },
     ],
   },

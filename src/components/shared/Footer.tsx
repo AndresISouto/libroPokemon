@@ -5,8 +5,8 @@ import { Link } from "react-router";
 
 export const Footer = () => {
   return (
-    <footer className="bg-nav text-white font-custom grid grid-cols-1 md:flex items-center justify-around p-4 ">
-      <nav className="space-x-4">
+    <footer className="bg-nav text-white font-custom flex flex-col md:flex-row items-center justify-around p-4 ">
+      <nav className="flex flex-col md:flex-row gap-4 p-2 text-center ">
         <Link key={navLinks[0].id} to={navLinks[0].href}>
           {navLinks[0].title}
         </Link>
@@ -17,7 +17,7 @@ export const Footer = () => {
           {navLinks[2].title}
         </Link>
       </nav>
-      <nav className="flex items-center gap-4">
+      <nav className="flex items-center gap-4 my-2">
         <div className="flex items-center gap-2">
           <FaPhoneAlt></FaPhoneAlt>
           <p>+34 123456789</p>
