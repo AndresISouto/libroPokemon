@@ -6,7 +6,11 @@ import { Link } from "react-router";
 export const Footer = () => {
   return (
     <footer className="bg-nav text-white font-custom flex flex-col md:flex-row items-center justify-around p-4 ">
-      <nav className="flex flex-col md:flex-row gap-4 p-2 text-center ">
+      <nav
+        className="flex flex-col md:flex-row gap-4 p-2 text-center "
+        role="navigation"
+        aria-label="footer"
+      >
         <Link key={navLinks[0].id} to={navLinks[0].href}>
           {navLinks[0].title}
         </Link>

@@ -27,7 +27,7 @@ export const LorePage = () => {
          invitados en una fiesta que empezó eones antes de nuestra llegada "
       ></RightImgSection>
       <LeftImgSection
-        img="/Atlas/005 - Teselia.png"
+        img="/Atlas/Atlas/005 - Teselia.png"
         title="La Profecía de la Tinta Blanca"
         body="En los márgenes de los manuscritos más viejos de la región, se habla de una era 
         donde las fronteras entre los sueños y la realidad se volverán permeables. 

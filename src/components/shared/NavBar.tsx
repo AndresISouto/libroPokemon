@@ -8,12 +8,16 @@ export const NavBar = () => {
   const [isToggled, setIsToggled] = useState(false);
 
   return (
-    <nav className="h-26 bg-nav w-full max-w-screen relative">
+    <nav
+      className="h-26 bg-nav w-full max-w-screen relative"
+      role="navigation"
+      aria-label="Main"
+    >
       <div className="flex items-center justify-around">
         <Link to={"/"} key={"logo"} className="flex items-center">
           <img
             src="/logo.png"
-            alt="logo"
+            alt="blason de mateo"
             className="h-24 w-24 max-w-24 relative "
           />
           <img
